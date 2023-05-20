@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFE1D3">
+
+
+
+
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/left_arrow" />
+
+
+
+    <ImageView
+        android:id="@+id/light"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/light"
+        android:layout_marginTop="320dp"
+        />
+
+    <Switch
+        android:id="@+id/lightstatus"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="370dp"
+        android:showText="false"
+        android:text="The Switch of the Light"
+        android:textColor="@color/background"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:thumbTint="#4D6835"
+        tools:checked="true"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="349dp" />
+
+
+
+
+</LinearLayout>

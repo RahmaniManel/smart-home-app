@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/fragment_bedroom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFE1D3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFE1D3"
+        android:orientation="vertical"
+        android:paddingBottom="15dp">
+
+
+
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFE1D3"
+            android:src="@drawable/left_arrow" />
+
+        <LinearLayout
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image">
+
+
+            <TextView
+                android:id="@+id/BedroomTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bathroom"
+                android:textColor="#319A31"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="63dp"
+                android:layout_height="41dp"
+                android:src="@drawable/bathroom_icon"
+                app:layout_constraintStart_toEndOf="@+id/textView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Title"
+            android:padding="15dp"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:id="@+id/light"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/light" />
+
+                <ImageView
+                    android:id="@+id/devices"
+                    android:layout_width="180dp"
+                    android:layout_height="160dp"
+                    android:background="@drawable/plugs" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="304dp"
+                android:layout_height="165dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:id="@+id/heating"
+                    android:layout_width="163dp"
+                    android:layout_height="178dp"
+                    android:background="@drawable/heater" />
+
+                <ImageView
+                    android:id="@+id/windowsAndDoors"
+                    android:layout_width="140dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/windows_bedroom" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
